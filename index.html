@@ -2,9 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oleh Kozhushko</title>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" media="only screen and (min-width: 601px)" href="css/respstyle2.css">
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="css/respstyle1.css">
+        <link rel="icon" href="img/favicon.ico">
     </head>
     <body>
         <header>
@@ -32,28 +35,28 @@
             <section id="bg0">
                 <div>
                     <a id="home">
-                        <h1>Oleh Kozhushko</h1>
+                        <h1 id="bg0_head">Oleh Kozhushko</h1>
                     </a>
                 </div>
                 <div>
                     <p>
                         I'm Front-end<br>developer
-                
+                    
                     </p>
                 </div>
                 <hr>
                 <div>
                     <a href="#">
-                        <img src="vk.png" alt="vk" class="image">
+                        <img src="img/vk.png" alt="vk" class="small-image">
                     </a>
                     <a href="#">
-                        <img src="fb.png" alt="facebook" class="image">
+                        <img src="img/fb.png" alt="facebook" class="small-image">
                     </a>
                     <a href="#">
-                        <img src="g.png" alt="google+" class="image">
+                        <img src="img/g.png" alt="google+" class="small-image">
                     </a>
                     <a href="#">
-                        <img src="sk.png" alt="skype" class="image">
+                        <img src="img/sk.png" alt="skype" class="small-image">
                     </a>
                 </div>
             </section>
@@ -64,21 +67,19 @@
                     </a>
                 </div>
                 <div>
-                    <img src="me.jpg" alt="my photo">
+                    <img src="img/me.jpg" alt="my photo">
                 </div>
                 <div>
-                    <p class="cstyle">
-                        Hi!! My name is Oleh Kozhushko. I'm 21 <br>
-                        years old. I'm front-end developer .
-              I don't <br>
-                        have professional experience but i am ready<br>to obtain it
-                
+                    <p class="cstyle">Hi!! My name is Oleh Kozhushko. I'm 21 
+                        years old. I'm front-end developer .I don't 
+                        have professional experience but i am ready 
+                        to obtain it
                     </p>
                 </div>
             </section>
             <section id="bg2">
                 <div>
-                    <div>
+                    <div id="con0">
                         <a id="resume">
                             <h2 class="gstyle">Education</h2>
                         </a>
@@ -91,13 +92,14 @@
                     </div>
                     <div id="con2">
                         <button>
-                            <img src="lo.png" alt="image-load" id="image">Download Resume
+                            <img src="img/lo.png" alt="image-load" id="im">Download Resume
                 
+                        
                         </button>
                     </div>
                 </div>
                 <hr>
-                <div>
+                <div id="block_header">
                     <h2 class="gstyle">Skills</h2>
                 </div>
                 <div id="skills">
@@ -123,19 +125,19 @@
                 </div>
                 <div>
                     <figure>
-                        <img src="p1.jpg" alt="image" class="lg-im">
+                        <img src="img/p1.jpg" alt="image" class="lg-im2">
                         <figcaption>Project 1</figcaption>
                     </figure>
                     <figure>
-                        <img src="p2.png" alt="image" class="lg-im">
+                        <img src="img/p2.png" alt="image" class="lg-im2">
                         <figcaption>Project 2</figcaption>
                     </figure>
                     <figure>
-                        <img src="p3.png" alt="image" class="lg-im">
+                        <img src="img/p3.png" alt="image" class="lg-im2">
                         <figcaption>Project 3</figcaption>
                     </figure>
                     <figure>
-                        <img src="p4.jpg" alt="image" class="lg-im">
+                        <img src="img/p4.jpg" alt="image" class="lg-im2">
                         <figcaption>Project 4</figcaption>
                     </figure>
                 </div>
@@ -148,54 +150,60 @@
                 </div>
                 <div id="footer">
                     <div id="wt">
-                        <div>
-                            <h4 class="wtstyle">Adress</h4>
+                        <div class="wt_pos1">
+                            <div class="wtstyle">
+                                <h4>Adress</h4>
+                            </div>
+                            <div class="pcol">
+                                <p>
+                                    Lukasha,2<br>
+                                    Postal 78970 <br>Lviv, Ukraine
+                            
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="pcol">
-                                Lukasha,2<br>
-                                Postal 78970 <br>Lviv, Ukraine
-                    
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="wtstyle">Phone</h4>
-                        </div>
-                        <div>
-                            <p class="pcol">+380935678675</p>
+                        <div class="wt_pos2">
+                            <div class="wtstyle">
+                                <h4>Phone</h4>
+                            </div>
+                            <div class="pcol">
+                                <p>+380935678675</p>
+                            </div>
                         </div>
                     </div>
                     <div id="con3">
-                        <div id="box2">
+                        <div id="con4">
                             <p class="astyle">SOCIAL LINKS</p>
                             <div>
                                 <a href="#">
-                                    <img src="vk.png" alt="vk" class="image1">
+                                    <img src="img/vk.png" alt="vk" class="small-image2">
                                 </a>
                                 <a href="#">
-                                    <img src="fb.png" alt="facebook" class="image1">
+                                    <img src="img/fb.png" alt="facebook" class="small-image2">
                                 </a>
                                 <a href="#">
-                                    <img src="g.png" alt="google+" class="image1">
+                                    <img src="img/g.png" alt="google+" class="small-image2">
                                 </a>
                                 <a href="#">
-                                    <img src="sk.png" alt="skype" class="image1">
+                                    <img src="img/sk.png" alt="skype" class="small-image2">
                                 </a>
                             </div>
                         </div>
                         <div id="form">
-                            <form action="https://formspree.io/olehkozhushko@gmail.com" method="post">
-                                <input type="text" name="name" placeholder="your name" id="f1">
+                            <form class="form" action="https://formspree.io/olehkozhushko@gmail.com" method="post">
+                                <input type="text" name="name" placeholder="your name" id="input1">
                                 <br>
-                                <input type="text" name="email" placeholder="your email" id="f2">
+                                <input type="text" name="email" placeholder="your email" id="input2">
                                 <br>
-                                <input type="submit" value="GET OUR NEWSLETTER" id="f3">
+                                <input type="submit" value="GET OUR NEWSLETTER" id="bt">
                             </form>
                         </div>
                     </div>
                 </div>
-                <hr>
-                <p class="astyle">&copy;OLEH KOZHUSHKO</p>
+                <hr id="hor_line">
+                <div id="copy_pos">
+                    <p class="astyle">&copy;OLEH KOZHUSHKO</p>
+                </div>
             </footer>
         </main>
     </body>

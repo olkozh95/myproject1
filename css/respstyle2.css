@@ -1,0 +1,172 @@
+header {
+    position: fixed;
+    top: 0px;
+    width:1024px;
+    z-index: 1;
+}
+main {
+    margin-top: 47px;
+}
+#bg0 hr {
+    width: 60%;
+    border: 1px solid #1C1C1C;
+    margin: 0 auto;
+}
+
+#bg1 {
+    height: 355px;
+}
+#bg1 img {
+    width: 92%;
+    min-width: 250px;
+    height: auto;
+}
+#bg1 div:nth-of-type(2){
+    align-self: center;
+    width: 400px;
+    margin-right: 50px;
+    position: relative;
+    right: 40px;
+}
+#bg1 div:nth-of-type(3){
+    font-size: 23px;
+    width: 37%;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 70px;
+}
+#bg2 {
+    height: 949px;
+}
+#bg2 div:nth-of-type(1) {
+    height: 250px;
+    justify-content: space-between;
+}
+
+#con1 {
+    margin-bottom: 60px;
+    align-self: center;
+}
+#con1 p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+#con2 {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+button {
+    font-family: impact, sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+}
+progress {
+  height: 40px;
+  width: 615px;
+}
+progress::-webkit-progress-bar {
+  height: 40px;
+  width: 615px;
+}
+#skills {
+    height: 600px;
+}
+#bg3 {
+    max-height: 1150px;
+}
+figure {
+    max-width: 350px;
+    max-height: 300px;
+}
+.lg-im2 {
+    width: 95%;
+    height: 100%;
+}
+#bg3 div:nth-of-type(2) {
+    height: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+figcaption {
+    font-family: verdana,sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+#bg4 {
+    background-color: #696969;
+    height: 522px;
+}
+.skstyle {
+    width: 615px;
+}
+#footer {
+    height: 430px;
+}
+#wt {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-around;
+}
+#wt p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pcol {
+    font-size: 16px;
+    font-family:  Comic Sans MS,sans-serif;
+}
+.wtstyle {
+    font-family: verdana;
+    font-size: 18px;
+}
+#con4 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 150px;
+    align-items: flex-end;
+}
+#con4 div:nth-of-type(1) {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin-top: 10px;
+    position: relative;
+    left:45px;
+}
+#con3 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#form {
+    width: 330px;
+    height: 200px;
+}
+#input1 {
+    width: 245px;
+    height: 35px;
+}
+#input2 {
+    width: 245px;
+    height: 35px;
+}
+#bt {
+    width: 245px;
+    height: 35px;
+}
+#bt:hover {
+    background-color: silver;
+}
+#copy_pos {
+    padding-top: 17px;
+    padding-left: 10px;
+}
