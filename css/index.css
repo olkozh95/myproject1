@@ -8,12 +8,14 @@ body {
 header {
     background-color: #1C1C1C;
     height: 47px;
+    display: 
 }
 nav li {
     display: inline;
     color: #009ACD;
     font-family: impact;
     font-size: 1.4em;
+    margin: 0 5px;
     
 }
 nav a {
@@ -22,34 +24,39 @@ nav a {
 nav a:hover {
     color: crimson;
 }
+nav {
+    width: 100%;
+}
 nav ul {
-    width:40%;
+    width:100%;
     height: 47px;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
     align-items: center;
 }
 header a{
     color:#009ACD;
 }
 #bg0 {
-    background-image: url(bg3.jpg);
+    background-image: url(bg4.jpg);
+    background-position: center center;
+    background-size: cover;
     height: 656px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#bg0_head {
+.bg0_head {
     font-size: 4.5rem;
-    font-family: comic sans MS;
+    font-family: comic sans MS, sans-serif;
     color: #CF000F;
     font-weight: 400;
     
 }
 #bg0 div:nth-of-type(2) {
     font-size: 2.5rem;
-    font-family: comic sans MS;
+    font-family: comic sans MS, sans-serif;
 }
 #bg0 div:nth-of-type(3) {
     width: 270px;
@@ -108,22 +115,23 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color:#4F4F4F;
 }
-#skills {
+.bg2_skills {
     width: 100%;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-figcaption {
-    font-family: verdana;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-}
 #bg3 {
     background-color: #FFFAFA;
-    height: 1900px;
+    height: 1600px;
+}
+figcaption {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 150%;
+    font-family: verdana;
+    color: crimson;
 }
 #bg4 {
     background-color: #696969;
@@ -134,62 +142,57 @@ figcaption {
     height: 25px;
 }
 .cstyle {
-    font-family: Comic Sans MS;
+    font-family: Comic Sans MS,sans-serif;
     font-size: 18px;
 }
 
-.gstyle {
-    font-family: courier new ;
+h2 {
+    font-family: courier new, sans-serif;
     font-size: 32px;
     color: black;
-    padding-left: 10px;
-    padding-top: 5px;
 }
 .small-image2 {
     width: 25px ;
     height: 25px;
 }
 .astyle {
-    font-family: arial;
+    font-family: arial, sans-serif;
 }
-.skstyle {
-    font-family: verdana;
+.bg2_skills h4 {
+    font-family: verdana,sans-serif;
     font-size: 16px;
-    
+    font-weight: 500;
 }
-#wt {
+.contact {
     color: white;
 }
-.pcol {
+.contact p {
     font-size: 16px;
-    font-family: Comic Sans MS;
+    font-family:  Comic Sans MS,sans-serif;
 }
-.wtstyle {
+.contact h4 {
     font-family: verdana;
     font-size: 18px;
 }
-#con4 div:nth-of-type(1) {
+.social .socialcontact {
     display: flex;
     width: 200px;
     justify-content: space-around;
     margin-top: 10px;
     position: relative;
 }
-#form {
+.form {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#input1 {
+.input {
     font-family: cursive;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
-#input2 {
-    font-family: cursive;
-}
-#bt {
+.btn {
     border: 2px solid green;
     color: green;
     font-family: georgia,sans-serif;
@@ -197,16 +200,16 @@ figcaption {
     border-radius: 7px;
     margin-top: 7px;
 }
-#footer {
+.footer {
     display: flex;
     justify-content:space-around;
 }
-#hor_line {
+.horline {
     margin: 0 auto;
     width: 98%;
     border: 1px solid black;
 }
-#copy_pos {
+.copyright {
     display: flex;
 }
 

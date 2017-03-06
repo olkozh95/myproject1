@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oleh Kozhushko</title>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" media="only screen and (min-width: 601px)" href="css/respstyle2.css">
-        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="css/respstyle1.css">
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" media="only screen and (min-width: 601px)" href="css/pc_layout.css">
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="css/mobile_layout.css">
+        <link rel="icon" href="favicon.ico">
     </head>
     <body>
         <header>
@@ -35,7 +35,7 @@
             <section id="bg0">
                 <div>
                     <a id="home">
-                        <h1 id="bg0_head">Oleh Kozhushko</h1>
+                        <h1 class="bg0_head">Oleh Kozhushko</h1>
                     </a>
                 </div>
                 <div>
@@ -63,7 +63,7 @@
             <section id="bg1">
                 <div>
                     <a id="about">
-                        <h2 class="gstyle">About</h2>
+                        <h2>About</h2>
                     </a>
                 </div>
                 <div>
@@ -81,7 +81,7 @@
                 <div>
                     <div id="con0">
                         <a id="resume">
-                            <h2 class="gstyle">Education</h2>
+                            <h2>Education</h2>
                         </a>
                     </div>
                     <div id="con1">
@@ -99,10 +99,8 @@
                     </div>
                 </div>
                 <hr>
-                <div id="block_header">
-                    <h2 class="gstyle">Skills</h2>
-                </div>
-                <div id="skills">
+                <h2 class=" bg2_skill_header">Skills</h2>
+                <div class="bg2_skills">
                     <h4 class="skstyle">JAVASCRIPT</h4>
                     <progress value="27" max="100"></progress>
                     <h4 class="skstyle">CSS</h4>
@@ -120,10 +118,10 @@
             <section id="bg3">
                 <div>
                     <a id="projects">
-                        <h2 class="gstyle">My Projects</h2>
+                        <h2 class="bg3_header">My Projects</h2>
                     </a>
                 </div>
-                <div>
+                <div class="container">
                     <figure>
                         <img src="img/p1.jpg" alt="image" class="lg-im2">
                         <figcaption>Project 1</figcaption>
@@ -132,6 +130,8 @@
                         <img src="img/p2.png" alt="image" class="lg-im2">
                         <figcaption>Project 2</figcaption>
                     </figure>
+                </div>
+                <div class="container">
                     <figure>
                         <img src="img/p3.png" alt="image" class="lg-im2">
                         <figcaption>Project 3</figcaption>
@@ -145,16 +145,16 @@
             <footer id="bg4">
                 <div>
                     <a id="contact">
-                        <h2 class="gstyle">Contact</h2>
+                        <h2>Contact</h2>
                     </a>
                 </div>
-                <div id="footer">
-                    <div id="wt">
-                        <div class="wt_pos1">
-                            <div class="wtstyle">
+                <div class="footer">
+                    <div class="contact">
+                        <div class="contact_adress">
+                            <div>
                                 <h4>Adress</h4>
                             </div>
-                            <div class="pcol">
+                            <div>
                                 <p>
                                     Lukasha,2<br>
                                     Postal 78970 <br>Lviv, Ukraine
@@ -162,19 +162,19 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="wt_pos2">
-                            <div class="wtstyle">
+                        <div class="contact_number">
+                            <div>
                                 <h4>Phone</h4>
                             </div>
-                            <div class="pcol">
+                            <div>
                                 <p>+380935678675</p>
                             </div>
                         </div>
                     </div>
-                    <div id="con3">
-                        <div id="con4">
-                            <p class="astyle">SOCIAL LINKS</p>
-                            <div>
+                    <div class="box">
+                        <div class="social astyle">
+                            <p>SOCIAL LINKS</p>
+                            <div class="socialcontact">
                                 <a href="#">
                                     <img src="img/vk.png" alt="vk" class="small-image2">
                                 </a>
@@ -189,20 +189,20 @@
                                 </a>
                             </div>
                         </div>
-                        <div id="form">
-                            <form class="form" action="https://formspree.io/olehkozhushko@gmail.com" method="post">
-                                <input type="text" name="name" placeholder="your name" id="input1">
+                        <div class="form">
+                            <form id="form" action="https://formspree.io/olehkozhushko@gmail.com" method="post">
+                                <input type="text" name="name" placeholder="your name" class="input">
                                 <br>
-                                <input type="text" name="email" placeholder="your email" id="input2">
+                                <input type="text" name="email" placeholder="your email" class="input">
                                 <br>
-                                <input type="submit" value="GET OUR NEWSLETTER" id="bt">
+                                <input type="submit" value="GET OUR NEWSLETTER" class="btn">
                             </form>
                         </div>
                     </div>
                 </div>
-                <hr id="hor_line">
-                <div id="copy_pos">
-                    <p class="astyle">&copy;OLEH KOZHUSHKO</p>
+                <hr class="horline">
+                <div class="astyle copyright">
+                    <p>Copyright 2017 &copy;OLEH KOZHUSHKO</p>
                 </div>
             </footer>
         </main>
