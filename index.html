@@ -4,47 +4,55 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Oleh Kozhushko</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" media="only screen and (min-width: 601px)" href="css/pc_layout.css">
         <link rel="stylesheet" media="only screen and (max-width: 600px)" href="css/mobile_layout.css">
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="img/favicon.ico">
     </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://myproject1-olkozhushko.c9users.io/index.html">My page</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#bg0">Home</a>
+                        </li>
+                        <li>
+                            <a href="#bg1">About</a>
+                        </li>
+                        <li>
+                            <a href="#bg2">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#bg3">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#bg4">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <main>
             <section id="bg0">
-                <div>
-                    <a id="home">
-                        <h1 class="bg0_head">Oleh Kozhushko</h1>
-                    </a>
-                </div>
-                <div>
+                <header>
+                    <h1 class="bg0_head">Oleh Kozhushko</h1>
                     <p>
-                        I'm Front-end<br>developer
-                    
+                        I'm Front-end<br>developer 
                     </p>
-                </div>
-                <hr>
+                </header>
                 <div>
                     <a href="#">
                         <img src="img/vk.png" alt="vk" class="small-image">
@@ -62,15 +70,13 @@
             </section>
             <section id="bg1">
                 <div>
-                    <a id="about">
-                        <h2>About</h2>
-                    </a>
+                    <h2>About</h2>
                 </div>
                 <div>
                     <img src="img/me.jpg" alt="my photo">
                 </div>
-                <div>
-                    <p class="cstyle">Hi!! My name is Oleh Kozhushko. I'm 21 
+                <div class="wow slideInUp">
+                    <p class="about-myself">Hi!! My name is Oleh Kozhushko. I'm 21 
                         years old. I'm front-end developer .I don't 
                         have professional experience but i am ready 
                         to obtain it
@@ -79,64 +85,59 @@
             </section>
             <section id="bg2">
                 <div>
-                    <div id="con0">
-                        <a id="resume">
-                            <h2>Education</h2>
-                        </a>
+                    <div class="bg2-education-header">
+                        <h2>Education</h2>
                     </div>
-                    <div id="con1">
-                        <h3 class="astyle">Front-end Developer</h3>
-                        <p class="cstyle">One month course - March 2017</p>
-                        <h3 class="astyle">Deegres of Bachelors</h3>
-                        <p class="cstyle">Lviv Polytechic University - June 2016</p>
+                    <div class="education">
+                        <h3 class="h3-like">Front-end Developer</h3>
+                        <p class="p-like">One month course - March 2017</p>
+                        <h3 class="h3-like">Deegres of Bachelors</h3>
+                        <p class="p-like">Lviv Polytechic University - June 2016</p>
                     </div>
-                    <div id="con2">
-                        <button>
-                            <img src="img/lo.png" alt="image-load" id="im">Download Resume
-                
-                        
+                    <div class="download-resume">
+                        <button class="btn-download">
+                            <span class="glyphicon glyphicon-download"></span>
+                            Download Resume
                         </button>
                     </div>
                 </div>
                 <hr>
                 <h2 class=" bg2_skill_header">Skills</h2>
                 <div class="bg2_skills">
-                    <h4 class="skstyle">JAVASCRIPT</h4>
+                    <h4>JAVASCRIPT</h4>
                     <progress value="27" max="100"></progress>
-                    <h4 class="skstyle">CSS</h4>
+                    <h4>CSS</h4>
                     <progress value="40" max="100"></progress>
-                    <h4 class="skstyle">HTML</h4>
+                    <h4>HTML</h4>
                     <progress value="44" max="100"></progress>
-                    <h4 class="skstyle">BOOTSTRAP</h4>
+                    <h4>BOOTSTRAP</h4>
                     <progress value="12" max="100"></progress>
-                    <h4 class="skstyle">AJAX</h4>
+                    <h4>AJAX</h4>
                     <progress value="12" max="100"></progress>
-                    <h4 class="skstyle">JQUERY</h4>
+                    <h4>JQUERY</h4>
                     <progress value="12" max="100"></progress>
                 </div>
             </section>
             <section id="bg3">
                 <div>
-                    <a id="projects">
-                        <h2 class="bg3_header">My Projects</h2>
-                    </a>
+                    <h2 class=" bg3_header">My Projects</h2>
                 </div>
-                <div class="container">
-                    <figure>
+                <div class="projects">
+                    <figure class="wow slideInLeft">
                         <img src="img/p1.jpg" alt="image" class="lg-im2">
                         <figcaption>Project 1</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="wow slideInRight">
                         <img src="img/p2.png" alt="image" class="lg-im2">
                         <figcaption>Project 2</figcaption>
                     </figure>
                 </div>
-                <div class="container">
-                    <figure>
+                <div class="projects">
+                    <figure class="wow slideInLeft">
                         <img src="img/p3.png" alt="image" class="lg-im2">
                         <figcaption>Project 3</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="wow slideInRight">
                         <img src="img/p4.jpg" alt="image" class="lg-im2">
                         <figcaption>Project 4</figcaption>
                     </figure>
@@ -144,13 +145,11 @@
             </section>
             <footer id="bg4">
                 <div>
-                    <a id="contact">
-                        <h2>Contact</h2>
-                    </a>
+                    <h2>Contact</h2>
                 </div>
                 <div class="footer">
                     <div class="contact">
-                        <div class="contact_adress">
+                        <div class="contact-adress">
                             <div>
                                 <h4>Adress</h4>
                             </div>
@@ -158,11 +157,10 @@
                                 <p>
                                     Lukasha,2<br>
                                     Postal 78970 <br>Lviv, Ukraine
-                            
                                 </p>
                             </div>
                         </div>
-                        <div class="contact_number">
+                        <div class="contact-number">
                             <div>
                                 <h4>Phone</h4>
                             </div>
@@ -172,39 +170,47 @@
                         </div>
                     </div>
                     <div class="box">
-                        <div class="social astyle">
+                        <div class="social">
                             <p>SOCIAL LINKS</p>
-                            <div class="socialcontact">
+                            <div class="social-contact">
                                 <a href="#">
-                                    <img src="img/vk.png" alt="vk" class="small-image2">
+                                    <img src="img/vk.png" alt="vk" class="small-image2 wow bounce">
                                 </a>
                                 <a href="#">
-                                    <img src="img/fb.png" alt="facebook" class="small-image2">
+                                    <img src="img/fb.png" alt="facebook" class="small-image2 wow bounce">
                                 </a>
                                 <a href="#">
-                                    <img src="img/g.png" alt="google+" class="small-image2">
+                                    <img src="img/g.png" alt="google+" class="small-image2 wow bounce">
                                 </a>
                                 <a href="#">
-                                    <img src="img/sk.png" alt="skype" class="small-image2">
+                                    <img src="img/sk.png" alt="skype" class="small-image2 wow bounce">
                                 </a>
                             </div>
                         </div>
                         <div class="form">
-                            <form id="form" action="https://formspree.io/olehkozhushko@gmail.com" method="post">
-                                <input type="text" name="name" placeholder="your name" class="input">
+                            <form id="form">
+                                <input type="text"  placeholder="your name" class="input" id="client-name">
                                 <br>
-                                <input type="text" name="email" placeholder="your email" class="input">
+                                <input type="email"  placeholder="your email" class="input" id="client-email">
                                 <br>
-                                <input type="submit" value="GET OUR NEWSLETTER" class="btn">
+                                <input type="submit" value="GET OUR NEWSLETTER" id="btn-submit">
                             </form>
                         </div>
                     </div>
                 </div>
                 <hr class="horline">
-                <div class="astyle copyright">
+                <div class="copyright">
                     <p>Copyright 2017 &copy;OLEH KOZHUSHKO</p>
                 </div>
             </footer>
         </main>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/collapse-navbar.js"></script>
+        <script src="js/index.js"></script>
+        <script src="lib/wow.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>

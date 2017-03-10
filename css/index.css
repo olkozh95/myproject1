@@ -1,42 +1,69 @@
 * {
     margin: 0;
 }
+
 body {
     max-width: 1024px;
     margin: 0 auto;
+    padding-top: 70px;
+    position: relative;
 }
-header {
+
+.navbar {
     background-color: #1C1C1C;
-    height: 47px;
-    display: 
+    border-radius: 0;
+    max-width: 1024px;
+    margin: 0 auto;
 }
-nav li {
-    display: inline;
+
+.navbar-brand {
+    font-size: 2em;
+    font-family: fantasy;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: white;
+    opacity: 0.9;
+}
+
+.icon-bar {
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin: 3px 0;
+    background: white;
+}
+
+main {
+    position: relative;
+    bottom: 20px;
+}
+
+.nav li {
     color: #009ACD;
     font-family: impact;
     font-size: 1.4em;
     margin: 0 5px;
-    
 }
-nav a {
+
+.nav a {
     text-decoration: none;
 }
-nav a:hover {
+
+.nav a:hover {
     color: crimson;
+    background-color: black;
 }
+
+#home,#about,#resume,#projects,#contact {
+    text-decoration: none;
+}
+
 nav {
     width: 100%;
 }
-nav ul {
-    width:100%;
-    height: 47px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-}
-header a{
-    color:#009ACD;
-}
+
 #bg0 {
     background-image: url(bg4.jpg);
     background-position: center center;
@@ -47,18 +74,26 @@ header a{
     justify-content: center;
     align-items: center;
 }
+
 .bg0_head {
-    font-size: 4.5rem;
+    font-size: 7rem;
     font-family: comic sans MS, sans-serif;
-    color: #CF000F;
+    color: red;
     font-weight: 400;
-    
 }
-#bg0 div:nth-of-type(2) {
-    font-size: 2.5rem;
+
+header {
+    background-color: white;
+    opacity: 0.8;
+}
+
+#bg0 p {
+    font-size: 3.5rem;
     font-family: comic sans MS, sans-serif;
+    color: black;
 }
-#bg0 div:nth-of-type(3) {
+
+#bg0 div:nth-of-type(1) {
     width: 270px;
     height: 120px;
     display: flex;
@@ -66,66 +101,93 @@ header a{
     align-content: flex-end;
     margin-top: 10px;
 }
+
 .small-image {
     width: 30px;
     height: 30px;
 }
+
 #bg0 p {
     text-align: center;
 }
+
 #bg1 {
     background-image: url(bg1.jpg);
     display: flex;
+    width: 100%;
 }
-#bg1 div:nth-of-type(3) {
-    color: purple;
+
+.about-myself {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #B03060;
 }
-#im {
-    width: 20px;
-    height: 20px;
+
+.download-resume {
+    max-width: 20%;
+    max-height: 50px;
+}
+
+.btn-download {
+    font-family: impact, sans-serif;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px #808080;
 }
 
 #bg2 {
     background-color: #F5F5F5;
 }
+
 #bg2 div:nth-of-type(1) {
     display: flex;
 }
-#con1 p:nth-of-type(1) {
+
+.education p:nth-of-type(1) {
     margin-top: 10px;
     margin-left: 10px;
 }
-#con1 p:nth-of-type(2) {
+
+.education p:nth-of-type(2) {
     margin-top: 10px;
     margin-left: 10px;
 }
+
 #bg2 hr {
     width: 99%;
     border: 1px solid #828282;
     margin: 0 auto;
 }
+
 progress {
-  background-color: #D3D3D3;
-  border: 0;
+    background-color: #D3D3D3;
+    border: 0;
 }
+
 progress::-webkit-progress-bar {
-  background-color: #D3D3D3;
-  border: 0;
+    background-color: #D3D3D3;
+    border: 0;
 }
+
 progress::-webkit-progress-value {
-    background-color:#4F4F4F;
+    background-color: #4F4F4F;
 }
+
 .bg2_skills {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+
 #bg3 {
     background-color: #FFFAFA;
     height: 1600px;
 }
+
 figcaption {
     text-align: center;
     padding-top: 15px;
@@ -133,54 +195,69 @@ figcaption {
     font-family: verdana;
     color: crimson;
 }
+
 #bg4 {
     background-color: #696969;
     height: 522px;
 }
+
 .small-image2 {
     width: 25px ;
     height: 25px;
 }
-.cstyle {
+
+.p-like {
     font-family: Comic Sans MS,sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.h3-like {
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 h2 {
     font-family: courier new, sans-serif;
     font-size: 32px;
     color: black;
+    margin-top: 10px;
+    font-weight: 600;
 }
+
 .small-image2 {
     width: 25px ;
     height: 25px;
 }
-.astyle {
-    font-family: arial, sans-serif;
-}
+
+
 .bg2_skills h4 {
     font-family: verdana,sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
+
 .contact {
     color: white;
 }
+
 .contact p {
     font-size: 16px;
-    font-family:  Comic Sans MS,sans-serif;
+    font-family: Comic Sans MS,sans-serif;
 }
+
 .contact h4 {
     font-family: verdana;
     font-size: 18px;
 }
-.social .socialcontact {
+
+.social-contact {
     display: flex;
     width: 200px;
     justify-content: space-around;
     margin-top: 10px;
     position: relative;
 }
+
 .form {
     background-color: white;
     display: flex;
@@ -188,11 +265,13 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .input {
     font-family: cursive;
     margin-bottom: 5px;
 }
-.btn {
+
+#btn-submit {
     border: 2px solid green;
     color: green;
     font-family: georgia,sans-serif;
@@ -200,16 +279,19 @@ h2 {
     border-radius: 7px;
     margin-top: 7px;
 }
+
 .footer {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
+
 .horline {
     margin: 0 auto;
     width: 98%;
     border: 1px solid black;
 }
+
 .copyright {
     display: flex;
+    font-family: verdana;
 }
-
